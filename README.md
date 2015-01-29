@@ -41,3 +41,7 @@ Step 4: Add the code: <br>
         alert.addAction(fbBtn)
         alert.addAction(cancelButton)
         self.presentViewController(alert, animated: true, completion: nil)
+
+
+
+<a href="http://opensource.org/licenses/MIT">MIT License</a>
