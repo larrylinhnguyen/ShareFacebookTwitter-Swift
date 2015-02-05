@@ -10,7 +10,7 @@ Step 2: Add the UIActionSheetDelegate to you class declaration. <br>
 Step 3: Create your IBAction. <br>
 Step 4: Add the code: <br>
 
-         let alert = UIAlertController(title: "Share", message: "Deel de PaasPop app", preferredStyle: UIAlertControllerStyle.ActionSheet)
+         let alert = UIAlertController(title: "Share", message: "Share the app", preferredStyle: UIAlertControllerStyle.ActionSheet)
            let twBtn = UIAlertAction(title: "Twitter", style: UIAlertActionStyle.Default) { (alert) -> Void in
                if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
                  var twitterSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
