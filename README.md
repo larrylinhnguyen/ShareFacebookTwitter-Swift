@@ -10,15 +10,16 @@ Step 2: Add the UIActionSheetDelegate to you class declaration. <br>
 Step 3: Create your IBAction. <br>
 Step 4: Add the code: <br>
 
-         let alert = UIAlertController(title: "Share", message: "Share the app", preferredStyle: UIAlertControllerStyle.ActionSheet)
-           let twBtn = UIAlertAction(title: "Twitter", style: UIAlertActionStyle.Default) { (alert) -> Void in
-               if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
-                 var twitterSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-                twitterSheet.setInitialText("Deel de PaasPop app op twitter")
+         
+        let alert = UIAlertController(title: "Share", message: "Share the app", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let twBtn = UIAlertAction(title: "Twitter", style: UIAlertActionStyle.Default) { (alert) -> Void in
+            if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
+                var twitterSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+                twitterSheet.setInitialText("Share on Twitter")
                 self.presentViewController(twitterSheet, animated: true, completion: nil)
             } else {
-                var alert = UIAlertController(title: "Account", message: "Log alstublieft in met twitter.", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "Oke", style: UIAlertActionStyle.Default, handler: nil))
+                var alert = UIAlertController(title: "Accounts", message: "Please login to a Twitter account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
             }
         }
@@ -26,16 +27,16 @@ Step 4: Add the code: <br>
         let fbBtn = UIAlertAction(title: "Facebook", style: UIAlertActionStyle.Default) { (alert) -> Void in
             if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
                 var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-                facebookSheet.setInitialText("Deel de PaasPop app op Facebook")
+                facebookSheet.setInitialText("Share on Facebook")
                 self.presentViewController(facebookSheet, animated: true, completion: nil)
             } else {
-                var alert = UIAlertController(title: "Account", message: "Log alstublieft in met Facebook.", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "Oke", style: UIAlertActionStyle.Default, handler: nil))
+                var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
             }
         }
         let cancelButton = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) { (alert) -> Void in
-            println("Cancel pressed")
+            println("Cancel Pressed")
         }
         
         alert.addAction(twBtn)
