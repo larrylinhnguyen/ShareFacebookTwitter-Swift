@@ -6,8 +6,9 @@ Easy Copy and Paste code to add a UIActionSheet to your Swift app.
 
 Step 1: Add the Social Framework to your App (General > Linked Frameworks and Libraries). <br>
 Step 2: Add the UIActionSheetDelegate to you class declaration. <br>
-Step 3: Create your IBAction. <br>
-Step 4: Add the code: <br>
+Step 3: Add "Import Social" to your viewcontroller
+Step 4: Create your IBAction. <br>
+Step 5: Add the code: <br>
 
          
         let alert = UIAlertController(title: "Share", message: "Share the app", preferredStyle: UIAlertControllerStyle.ActionSheet)
