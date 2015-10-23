@@ -1,7 +1,6 @@
 # ShareFacebookTwitterSwift
-Easy Copy and Paste code to add a sharing UIActionSheet to your Swift app.
-This wil create a UIActionSheet with a share to Facebook and Twitter button.
-
+How to create a share to Facebook & Twitter in iOS in Swift.
+Easy Copy and Paste code to add a UIActionSheet to your Swift app.
 
 <h3>INSTALLATION</h3>
 
