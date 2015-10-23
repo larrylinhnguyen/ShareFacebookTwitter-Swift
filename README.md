@@ -6,7 +6,7 @@ Easy Copy and Paste code to add a UIActionSheet to your Swift app.
 <h4>Swift 2</h4>
 Step 1: Add the Social Framework to your App (General > Linked Frameworks and Libraries). <br>
 Step 2: Add the UIActionSheetDelegate to you class declaration. <br>
-Step 3: Add "Import Social" to your viewcontroller
+Step 3: Add "Import Social" to your viewcontroller<br>
 Step 4: Create your IBAction. <br>
 Step 5: Add the code: <br>
 
@@ -48,7 +48,7 @@ Step 5: Add the code: <br>
 <h4>Swift 1</h4>
 Step 1: Add the Social Framework to your App (General > Linked Frameworks and Libraries). <br>
 Step 2: Add the UIActionSheetDelegate to you class declaration. <br>
-Step 3: Add "Import Social" to your viewcontroller
+Step 3: Add "Import Social" to your viewcontroller<br>
 Step 4: Create your IBAction. <br>
 Step 5: Add the code: <br>
 
